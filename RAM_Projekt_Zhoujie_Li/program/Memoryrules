@@ -1,0 +1,58 @@
+Fibonacci Regeln:
+Beispiel: 3 4 5 6 1 1 0
++-----------+------+------+------+------+------+------+------+
+| Index     | 0    | 1    |  2   |  3   |   4  |   5  |   6  |
++-----------+------+------+------+------+------+------+------+
+| Wert      | 3    | 4    |  5   |   6  |   1  |  1   |   0  |
++-----------+------+------+------+------+------+------+------+
+Index 0 = counter für den Fibonacci durchlauf
+Index 1 = Indirekte Adresse für erste Zahl von Fibonacci
+Index 2 = Indirekte Adresse für zweize Zahl von Fibonacci
+Index 3 = Wird der Summe in indirekte Adresse gespeichert
+Index 4 = Direkte Adresse aller erste Fibnonacci Zahl
+
+Addition Regeln:
+Beispiel: 5 5 0
++-----------+------+------+------+
+| Index     | 0    | 1    |  2   |
++-----------+------+------+------+
+| Wert      | 5    | 5    |  0   |
++-----------+------+------+------+
+Index 0 =  1. Summand
+Index 1 =  2. Summand
+Index 3 =   Ergebnis
+
+Subtraktion Regeln:
+Beispiel: 10 5 0
++-----------+------+------+------+
+| Index     | 0    | 1    |  2   |
++-----------+------+------+------+
+| Wert      | 10   | 5    |  0   |
++-----------+------+------+------+
+Index 0 = Minuend
+Index 1 = Subtrahend
+Index 2 =  Differenz
+
+Muliplikation Regeln:
+Beispiel: 7 9 0 1
++-----------+------+------+------+------+
+| Index     | 0    | 1    |  2   |  3   |
++-----------+------+------+------+------+
+| Wert      | 7    | 9    |  0   |  1   |
++-----------+------+------+------+------+
+Index 0 = 1. Faktor
+Index 1 = 2. Faktor (counter)
+index 3 = Ergebnis
+index 4(Wichtig) =  Hier wird der 2. Faktor um 1 reduziert, um sicherzustellen, dass die Multiplikation nicht in einer Endlosschleife endet.
+
+Division Regeln: es geht nur mit rest 0
+Beispiel: 27 9 0 1
++-----------+------+------+------+------+
+| Index     | 0    | 1    |  2   |  3   |
++-----------+------+------+------+------+
+| Wert      | 27   | 9    |  0   |  1   |
++-----------+------+------+------+------+
+Index 0 = Dividend
+Index 1 = Divisor
+Index 2 = Ergebnis
+Index 3(Wichtig) = Hier wird das Ergebnis um 1 erhöht, um den nächsten Schritt der Division durchzuführen.
